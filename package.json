@@ -1,0 +1,18 @@
+{
+  "name": "js-ds-memory-tests",
+  "version": "0.0.1",
+  "description": "JavaScript data structures memory usage tests",
+  "author": "Vadim Shender",
+  "license": "MIT",
+  "scripts": {
+    "run:js-mutable": "node --expose-gc --max-old-space-size=8192 src/js-mutable/test.js",
+    "run:js-immutable": "node --expose-gc --max-old-space-size=8192 src/js-immutable/test.js",
+    "run:immutable.js": "node --expose-gc --max-old-space-size=8192 src/immutable.js/test.js",
+    "run:immer.js": "node --expose-gc --max-old-space-size=8192 src/immer.js/test.js"
+  },
+  "dependencies": {
+    "immer": "^1.3.1",
+    "immutable": "^3.8.2",
+    "node-memwatch": "^1.0.1"
+  }
+}
